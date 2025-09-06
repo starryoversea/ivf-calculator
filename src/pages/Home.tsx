@@ -4,12 +4,10 @@ import { CalculatorContext, CalculationResult } from "@/contexts/calculatorConte
 import { motion } from "framer-motion";
 import { toast } from "sonner";
 import { useTheme } from "@/hooks/useTheme";
-import { Calendar, Clock, Globe, Weight, Moon, Sun, History, Info, Book, Save, Trash2 } from "lucide-react";
+import { Calendar, Clock, Globe, Moon, Sun, History, Info, Book, Save, Trash2 } from "lucide-react";
 import { formatDateToDDMMYYYY } from "@/lib/utils";
 import { Language } from "@/App";
 
-// 定义单位系统类型
-type UnitSystem = 'metric' | 'imperial';
 
 export default function Home() {
   const { language, setLanguage, t } = useContext(LocaleContext);
@@ -20,7 +18,6 @@ export default function Home() {
   const [dateType, setDateType] = useState<'transfer' | 'retrieval'>('transfer');
   const [selectedDate, setSelectedDate] = useState<string>('');
   const [embryoStage, setEmbryoStage] = useState<number>(3);
-  const [unitSystem, setUnitSystem] = useState<UnitSystem>('metric');
   
   // 计算结果状态
   const [calculationResult, setCalculationResult] = useState<Omit<CalculationResult, 'id' | 'calculationDate'> | null>(null);
@@ -133,22 +130,6 @@ export default function Home() {
               )}
             </button>
             
-            {/* 单位系统切换 */}
-            <div className="flex items-center gap-2 bg-white/80 dark:bg-gray-800/80 px-3 py-2 rounded-full shadow-md backdrop-blur-sm">
-              <Weight size={18} className={isDark ? 'text-green-300' : 'text-green-600'} />
-              <button 
-                className={`px-2 py-1 rounded-full ${unitSystem === 'metric' ? 'bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300' : isDark ? 'text-gray-300' : 'text-gray-700'}`}
-                onClick={() => setUnitSystem('metric')}
-              >
-                {t('metricLabel')}
-              </button>
-              <button 
-                className={`px-2 py-1 rounded-full ${unitSystem === 'imperial' ? 'bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300' : isDark ? 'text-gray-300' : 'text-gray-700'}`}
-                onClick={() => setUnitSystem('imperial')}
-              >
-                {t('imperialLabel')}
-              </button>
-            </div>
             
             {/* 时区信息 */}
             <div className="flex items-center gap-2 bg-white/80 dark:bg-gray-800/80 px-3 py-2 rounded-full shadow-md backdrop-blur-sm text-sm">

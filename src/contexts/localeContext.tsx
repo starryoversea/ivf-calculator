@@ -60,10 +60,6 @@ const translations: Record<Language, LocaleStrings> = {
     infoTitle: "About IVF Due Date Calculation",
     infoText: "IVF due dates are calculated differently than natural conception. Add 266 days to the reference date and adjust based on the embryo stage for accurate calculation.",
     
-    // 单位切换
-    unitSystemLabel: "Unit System:",
-    metricLabel: "Metric",
-    imperialLabel: "Imperial",
     
     // 时区信息
     timezoneLabel: "Your Current Timezone:",
@@ -108,10 +104,6 @@ const translations: Record<Language, LocaleStrings> = {
     infoTitle: "Acerca del Cálculo de Fecha de Parto por FIV",
     infoText: "Las fechas de parto por FIV se calculan de manera diferente a la concepción natural. Agrega 266 días a la fecha de referencia y ajusta según la etapa del embrión para un cálculo preciso.",
     
-    // 单位切换
-    unitSystemLabel: "Sistema de Unidades:",
-    metricLabel: "Métrico",
-    imperialLabel: "Imperial",
     
     // 时区信息
     timezoneLabel: "Tu Zona Horaria Actual:",
@@ -156,10 +148,6 @@ const translations: Record<Language, LocaleStrings> = {
     infoTitle: "À Propos du Calcul de Date d'Accouchement IVF",
     infoText: "Les dates prévues d'accouchement IVF sont calculées différemment de la conception naturelle. Ajoutez 266 jours à la date de référence et ajustez en fonction du stade de l'embryon pour un calcul précis.",
     
-    // 单位切换
-    unitSystemLabel: "Système d'Unités:",
-    metricLabel: "Métrique",
-    imperialLabel: "Impérial",
     
     // 时区信息
     timezoneLabel: "Votre Fuseau Horaire Actuel:",
@@ -204,10 +192,6 @@ const translations: Record<Language, LocaleStrings> = {
     infoTitle: "关于IVF预产期计算",
     infoText: "IVF预产期的计算方式与自然受孕不同。在参考日期基础上加266天，并根据胚胎阶段进行调整以获得准确的计算结果。",
     
-    // 单位切换
-    unitSystemLabel: "单位系统：",
-    metricLabel: "公制",
-    imperialLabel: "英制",
     
     // 时区信息
     timezoneLabel: "您当前的时区：",
