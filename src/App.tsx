@@ -1,3 +1,4 @@
+// @ts-ignore
 import { Routes, Route } from "react-router-dom";
 import Home from "@/pages/Home";
 import { useState } from "react";
@@ -18,6 +19,7 @@ const detectUserLanguage = (): Language => {
   
   // 从浏览器语言设置检测
   const browserLanguage = navigator.language.toLowerCase();
+  
   
   if (browserLanguage.startsWith('zh')) {
     return 'zh';

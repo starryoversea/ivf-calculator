@@ -13,4 +13,9 @@ function getPlugins() {
 
 export default defineConfig({
   plugins: getPlugins(),
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+  },
+  base: './',
 });
