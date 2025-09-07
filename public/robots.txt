@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.ivf-due-date-calculator.com/sitemap.xml
+
+
